@@ -20,26 +20,14 @@ function setup() {
   noStroke();
 }
 
+update(){
+  if 
+}
+
 function draw() {
   background(200, 20, 120);
   for (let idx = 0; idx < blinks.length; idx++){
 
-    let mBlink = blinks[idx];
-
-    if (millis() - mBlink.changed > mBlink.period) {
-      mBlink.visible = !mBlink.visible;
-      mBlink.changed = millis();
-    }
-
-    let isMouseOver = dist(mouseX, mouseY, mBlink.x, mBlink.y) < (mBlink.diam/2);
-
-
-    if (mBlink.visible || isMouseOver) {
-      if (isMouseOver){
-        fill(mBlink.mocolor)
-      } else(fill(255))
-      ellipse(mBlink.x, mBlink.y, mBlink.diam);
-    }
   }
 }
 

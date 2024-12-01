@@ -7,6 +7,13 @@ function setup() {
   noStroke();
 }
 
+class Movey{
+  constructor(x,y){
+    
+  }
+}
+
+
 function draw() {
   background(200, 20, 120);
   for (let idx = 0; idx < moves.length; idx++) {
